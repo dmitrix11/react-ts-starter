@@ -1,6 +1,6 @@
 # ViteRC ❤️‍🔥
 
-A modern minimal Vite + React + TypeScript template with pre-configured ESLint (with Airbnb JS/React rules), Prettier, Testing with Jest and Git hooks with Husky out of the box 📦
+A modern minimal Vite + React + TypeScript + TailwindCSS template with pre-configured ESLint (with Airbnb JS/React rules), Prettier, Testing with Jest and Git hooks with Husky out of the box 📦
 
 ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -32,16 +32,16 @@ This template arose out of a need to unite all the above libraries, which were n
 ## Usage
 
 ```bash
-npx degit potreco/viterc my-app
+npx degit dmitrix11/react-ts-starter my-app
 
 cd my-app
 
 # Required if you want a repository and work with Git hooks
 git init
 
-yarn install
+pnpm install
 
-yarn dev
+pnpm dev
 ```
 
 ## Available commands
@@ -50,26 +50,23 @@ yarn dev
 
 | Script        | Description                                                                 |
 | ------------- | --------------------------------------------------------------------------- |
-| yarn dev      | Runs the app in the development mode.                                       |
-| yarn build    | Builds the app for production to the `dist` folder.                         |
-| yarn preview  | Builds the app for production to the `dist` folder, and run locally server. |
-| yarn lint     | Runs the Eslint and show code problems                                      |
-| yarn lint:fix | Runs the Eslint and fix the code problems                                   |
-| yarn format   | Runs the Prettier and fix code style                                        |
-| yarn compile  | Runs the TS Compiling                                                       |
-| yarn test     | Run the app tests.                                                          |
-| yarn commit   | Open the CZ CLI to create a message to your commit.                         |
+| pnpm dev      | Runs the app in the development mode.                                       |
+| pnpm build    | Builds the app for production to the `dist` folder.                         |
+| pnpm preview  | Builds the app for production to the `dist` folder, and run locally server. |
+| pnpm lint     | Runs the Eslint and show code problems                                      |
+| pnpm lint:fix | Runs the Eslint and fix the code problems                                   |
+| pnpm format   | Runs the Prettier and fix code style                                        |
+| pnpm compile  | Runs the TS Compiling                                                       |
+| pnpm test     | Run the app tests.                                                          |
+| pnpm commit   | Open the CZ CLI to create a message to your commit.                         |
 
 ## About the absolute imports
 
-To correctly functioning (code and tests) of absolute imports, you should add some codes in some files, like:
+To have correctly functioning (code and tests) of absolute imports, you should add some codes in some files, like:
 
 - jest.config.js
 - vite.config.ts
 - tsconfig.json
-
-We already writed some absolute imports on these files, so if you wanna more paths or edit some, feel free to do.
-If your not safe about it or have some question, send us a thread on [Github Discussions](https://github.com/potreco/viterc/discussions/new?category=q-a) asking for, we were happy to help
 
 ## TODO
 
